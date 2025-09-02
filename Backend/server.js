@@ -20,7 +20,10 @@ app.use(cookieParser());
 // ✅ CORS with credentials
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+     origin: [
+      "https://e-billing-software.netlify.app", 
+      "http://localhost:5173",                  
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
