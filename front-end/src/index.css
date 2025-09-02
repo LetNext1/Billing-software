@@ -1,0 +1,230 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Split screen layout */
+.split-screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  height: 100%;
+}
+
+/* Left gradient panel */
+.left-panel {
+  background: linear-gradient(to bottom right, #004e92, #000428);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+
+.illustration h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.illustration p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Right form panel */
+.right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* Login/Register container */
+.login-container {
+  width: 500px;
+  padding: 30px;
+  height: 90%;
+  background-color: #004e92;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Input fields */
+input {
+  display: block;
+  width: 80%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-left: 12%;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  margin-left: 25%;
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Login button inside form */
+button[type="submit"] {
+  background-color: white;
+  color: #004e92;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Register / Navigate buttons */
+.btn-registration {
+  margin-top: 90px;
+  background-color: white;
+  color: black;
+}
+#reg-btn{
+  margin-top: 30px;
+}
+
+img{
+  width: 60%;
+  height: 40%;
+  margin-left: 20%;
+}
+.client-btn{
+  background-color: aqua;
+}
+.dashboard {
+  display: flex;
+  height: 100vh; /* Full height split screen */
+  width: 100vw;
+}
+
+.dashboard-left {
+  width: 25%; /* Adjust sidebar width */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.client-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.client-btn:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-right {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.clients-button{
+  display: flex;
+}
+.clnt-dels-btn{
+  background-color: rgb(107, 107, 213);
+  width: 15%;
+}
+.newClient-form{
+  width: 50%;
+} 
+.edit-btn{
+  background-color: lightblue;
+  width:50px;
+  color: white;
+}
+.delete-btn{
+  background-color: red;
+  color: white;
+}
+.actions-btn{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/* Sale component */
+.sale-section{
+   border: 1px solid grey;
+  text-align: center;
+ 
+}
+
+
+.cus-field{
+  display: flex;
+  width: 70%;
+  margin-left: 60px;
+}
+
+.inputs-div{
+  display: flex;
+  width: 70%;
+}
+.bill-btn{
+  background-color: grey;
+  margin: 10px;
+  width: 80px;
+}
+.input-size{
+  width: 50px;
+  height: 20px;
+
+}
+.shop-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px;
+  margin-top: -50px;
+}
